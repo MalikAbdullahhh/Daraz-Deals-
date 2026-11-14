@@ -53,9 +53,9 @@ export const mockProducts: Product[] = [
     categoryId: 'cat-1',
     brand: 'TechX',
     images: [
-      'https://i.ibb.co/k6pj0Pt/smartphone-1.jpg',
-      'https://i.ibb.co/tPXjDw9/smartphone-2.jpg',
-      'https://i.ibb.co/n8Wm760/smartphone-3.jpg'
+      'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=800&q=80'
     ],
     features: [
       '6.7-inch Super Retina XDR display',
@@ -120,8 +120,8 @@ export const mockProducts: Product[] = [
     categoryId: 'cat-1',
     brand: 'AudioPro',
     images: [
-      'https://i.ibb.co/Xy9vRrk/headphones-1.jpg',
-      'https://i.ibb.co/MZTchBY/headphones-2.jpg'
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80'
     ],
     features: [
       'Industry-leading noise cancellation',
@@ -186,8 +186,8 @@ export const mockProducts: Product[] = [
     categoryId: 'cat-2',
     brand: 'FashionPlus',
     images: [
-      'https://i.ibb.co/NV2FQs7/shirt-1.jpg',
-      'https://i.ibb.co/gTv6yt1/shirt-2.jpg'
+      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80'
     ],
     features: [
       '100% premium cotton',
@@ -252,8 +252,8 @@ export const mockProducts: Product[] = [
     categoryId: 'cat-1',
     brand: 'VisionPlus',
     images: [
-      'https://i.ibb.co/m45ny63/tv-1.jpg',
-      'https://i.ibb.co/xLkQKHd/tv-2.jpg'
+      'https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1461151304267-38535e780c79?auto=format&fit=crop&w=800&q=80'
     ],
     features: [
       '4K Ultra HD (3840 x 2160) resolution',
@@ -318,8 +318,8 @@ export const mockProducts: Product[] = [
     categoryId: 'cat-3',
     brand: 'HomeStyle',
     images: [
-      'https://i.ibb.co/3Y3s3Cy/coffee-table-1.jpg',
-      'https://i.ibb.co/Wc1pjKB/coffee-table-2.jpg'
+      'https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80'
     ],
     features: [
       'Solid wood construction',
@@ -384,8 +384,8 @@ export const mockProducts: Product[] = [
     categoryId: 'cat-4',
     brand: 'NatureCare',
     images: [
-      'https://i.imgur.com/OpLmcNV.jpg',
-      'https://i.imgur.com/oMpU1Ct.jpg'
+      'https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80'
     ],
     features: [
       'Made with organic ingredients',
@@ -450,8 +450,8 @@ export const mockProducts: Product[] = [
     categoryId: 'cat-5',
     brand: 'AthleticPro',
     images: [
-      'https://i.imgur.com/wkDLoT6.jpg',
-      'https://i.imgur.com/JLpnZc0.jpg'
+      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80'
     ],
     features: [
       'Lightweight design for maximum speed',
@@ -516,8 +516,8 @@ export const mockProducts: Product[] = [
     categoryId: 'cat-5',
     brand: 'EcoLife',
     images: [
-      'https://i.imgur.com/CnDlmBY.jpg',
-      'https://i.imgur.com/2w3mOAy.jpg'
+      'https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=800&q=80'
     ],
     features: [
       'Double-wall vacuum insulation',
