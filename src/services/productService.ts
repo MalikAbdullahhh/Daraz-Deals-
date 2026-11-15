@@ -3,7 +3,7 @@ import { mockProducts } from './mockData';
 import axios from 'axios';
 
 // API base URL - change this to your actual backend URL
-const API_URL = 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 // Initialize products from API or localStorage as fallback
 let localProducts: Product[] = [];

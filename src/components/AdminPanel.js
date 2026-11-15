@@ -7,14 +7,14 @@ const AdminPanel = () => {
 
     useEffect(() => {
         // Fetch products from the backend on page load
-        axios.get('http://localhost:5000/api/products')
+        axios.get(`${import.meta.env.VITE_API_URL || 'http://localhost:5000/api'}/products`)
             .then((response) => setProducts(response.data))
             .catch((error) => console.error('Error fetching products:', error));
     }, []);
 
     const handleAddProduct = () => {
         // Send a POST request to add a new product
-        axios.post('http://localhost:5000/api/products', newProduct)
+        axios.post(`${import.meta.env.VITE_API_URL || 'http://localhost:5000/api'}/products`, newProduct)
             .then(() => {
                 setProducts([...products, newProduct]);
                 setNewProduct({ name: '', price: '' });
