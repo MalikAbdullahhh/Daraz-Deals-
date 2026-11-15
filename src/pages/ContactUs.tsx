@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaCheckCircle } from 'react-icons/fa';
+import { sendContact } from '../lib/fw-contact';
 
 const ContactUs: React.FC = () => {
   const [name, setName] = useState('');
@@ -9,9 +10,19 @@ const ContactUs: React.FC = () => {
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, you would send the form data to a server
+    setSending(true);
+    setError('');
+    const res = await sendContact('daraz-deals', { name, email, subject, message });
+    setSending(false);
+    if (!res.ok) {
+      setError(res.error);
+      return;
+    }
     setSubmitted(true);
     // Reset form after submission
     setName('');
@@ -129,7 +140,8 @@ const ContactUs: React.FC = () => {
                 />
               </InputGroup>
               
-              <SubmitButton type="submit">Send Message</SubmitButton>
+              {error && <p role="alert" style={{ color: '#d32f2f', margin: '0 0 12px', fontSize: 14 }}>{error}</p>}
+              <SubmitButton type="submit" disabled={sending}>{sending ? 'Sending…' : 'Send Message'}</SubmitButton>
             </ContactForm>
           )}
         </FormSection>
